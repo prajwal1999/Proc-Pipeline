@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {/home/prajwal/Public/Acad/Pipeline/others/ROM.vhd}
+vcom -93 -work work {/home/prajwal/Public/Acad/Pipeline/others/register16.vhd}
+vcom -93 -work work {/home/prajwal/Public/Acad/Pipeline/others/Gates.vhdl}
+vcom -93 -work work {/home/prajwal/Public/Acad/Pipeline/others/Blocks.vhd}
+vcom -93 -work work {/home/prajwal/Public/Acad/Pipeline/Stages/Fetch.vhd}
+
